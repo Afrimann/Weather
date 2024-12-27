@@ -11,7 +11,7 @@ const WeatherApp = () => {
   const [searchInput, setSearchInput] = useState<string>('London')
 
   const url = `
-http://api.weatherapi.com/v1/current.json?key=${process.env.NEXT_PUBLIC_WEATHER_API_KEY}&q=${searchInput}&aqi=yes`
+https://api.weatherapi.com/v1/current.json?key=${process.env.NEXT_PUBLIC_WEATHER_API_KEY}&q=${searchInput}&aqi=yes`
 
   const fetchNewWeather = async () => {
     try {
